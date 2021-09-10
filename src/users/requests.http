@@ -2,7 +2,7 @@
 GET http://localhost:3000/auth/?email=jamashah@gmail.com
 
 ### fetch user with given id
-GET http://localhost:3000/auth/1
+GET http://localhost:3000/auth/2
 
 ### create new user
 POST http://localhost:3000/auth/signup
