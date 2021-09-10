@@ -9,16 +9,19 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "Sameedkhan@gmail.com",
+    "email": "text@test.com",
     "password": "123456"
 }
+
+### sing out user
+POST http://localhost:3000/auth/signout
 
 ### sign in user
 POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-    "email": "Sameedkhans@gmail.com",
+    "email": "cena@test.com",
     "password": "123456"
 }
 
@@ -29,6 +32,9 @@ Content-Type: application/json
 {
     "email": "jamashah@gmail.com"
 }
+
+### get current user
+GET http://localhost:3000/auth/whoami
 
 ### delete a user with given ID
 DELETE http://localhost:3000/auth/1
