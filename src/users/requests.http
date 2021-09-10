@@ -1,0 +1,25 @@
+### list all users with email
+GET http://localhost:3000/auth/?email=jamashah@gmail.com
+
+### fetch user with given id
+GET http://localhost:3000/auth/1
+
+### create new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "hunainbinsajid@gmail.com",
+    "password": "123456"
+}
+
+### update user with specific id
+PATCH http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+    "email": "jamashah@gmail.com"
+}
+
+### delete a user with given ID
+DELETE http://localhost:3000/auth/1
